@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Passagem de Turno</title>
+  <link rel="stylesheet" href="Assets/style.css" />
+</head>
+
+<body>
+  <header>
+    <img src="Assets/img/LOGO_m-dias-branco.png" alt="Logo" class="logo" />
+  </header>
+
+  <main>
+    <div class="container">
+      <h1>Passagem de Turno</h1>
+      <h2>2º Turno</h2>
+      <a href="passagem.html" class="link-button">➡️ Status FE</a>
+      <a href="equipes.html" class="link-button">👥 Equipes</a>
+    </div>
+  </main>
+
+  <script>
+    window.addEventListener('scroll', function () {
+      const header = document.querySelector('header');
+      if (window.scrollY > 10) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+  </script>
+
+  <footer class="footer">
+    <p>&copy; 2025 David Alves - Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>

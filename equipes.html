@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Equipes</title>
+  <link rel="stylesheet" href="Assets/style.css" />
+</head>
+<body>
+  <header>
+    <img src="Assets/img/LOGO_m-dias-branco.png" alt="Logo" class="logo" />
+  </header>
+  
+  <main>
+    <div class="container">
+      <h1>Cadastro de Equipes</h1>
+
+      <label for="nomeMembro"><strong>Nome do Membro:</strong></label>
+      <input type="text" id="nomeMembro" placeholder="Digite um nome" />
+
+      <div class="actions">
+        <button onclick="adicionarMembro()">Incluir</button>
+        <button onclick="removerMembro()">Remover último</button>
+        <button onclick="finalizarEquipe()">Finalizar Equipe</button>
+      </div>
+
+      <h2>Membros da Equipe Atual:</h2>
+      <ul id="listaMembros"></ul>
+
+      <h2>Equipes Formadas:</h2>
+      <div id="equipesFormadas"></div>
+    </div>
+
+    <div style="text-align: center;">
+      <a href="index.html" class="back-button">⬅️ Voltar ao Menu Principal</a>
+    </div>
+  </main>
+
+  <script src="Assets/js/equipes.js"></script>
+
+  <footer class="footer">
+    <p>&copy; 2025 David Alves - Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>

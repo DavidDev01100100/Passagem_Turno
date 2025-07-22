@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Passagem de Turno</title>
+  <link rel="stylesheet" href="Assets/style.css" />
+</head>
+<body>
+  <header>
+    <img src="Assets/img/LOGO_m-dias-branco.png" alt="Logo" class="logo" />
+  </header>
+
+  <main>
+    <div class="container">
+      <h1>Status FE</h1>
+
+      <form id="turnoForm">
+        <label for="remessa">Remessa:</label>
+        <input type="text" id="remessa" required />
+
+        <label for="box">Box:</label>
+        <input type="text" id="box" required />
+
+        <label for="tarefa">Tarefa:</label>
+        <input type="text" id="tarefa" required />
+
+        <label for="equipe">Equipe:</label>
+        <input type="text" id="equipe" required />
+
+        <label for="obs">Obs:</label>
+        <input type="text" id="obs" />
+
+        <button type="submit" class="link-button">Adicionar</button>
+      </form>
+
+      <h2>Registros</h2>
+      <table id="tabelaRegistros">
+        <thead>
+          <tr>
+            <th>Remessa</th>
+            <th>Box</th>
+            <th>Tarefa</th>
+            <th>Equipe</th>
+            <th>Obs</th>
+            <th>Ação</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+
+    <div style="text-align: center; margin: 20px 0;">
+      <a href="index.html" class="back-button">⬅️ Voltar ao Menu Principal</a>
+    </div>
+  </main>
+
+  <script src="Assets/js/script.js"></script>
+
+  <footer class="footer">
+    <p>&copy; 2025 David Alves - Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
