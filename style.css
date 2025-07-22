@@ -343,3 +343,71 @@ table#tabelaRegistros td {
   margin: 0;
   letter-spacing: 0.5px;
 }
+
+@media (max-width: 600px) {
+  header {
+    padding: 10px 20px;
+    justify-content: center;
+  }
+
+  .logo {
+    width: 180px;
+  }
+
+  .container {
+    margin: 20px 16px;
+    padding: 20px;
+  }
+
+  input[type="text"] {
+    font-size: 1rem;
+    padding: 10px;
+  }
+
+  .link-button,
+  .back-button {
+    font-size: 1rem;
+    padding: 12px 20px;
+    max-width: 100%;
+  }
+
+  .actions button {
+    max-width: 100%;
+  }
+
+  /* Tabela responsiva */
+  table#tabelaRegistros,
+  table#tabelaRegistros thead,
+  table#tabelaRegistros tbody,
+  table#tabelaRegistros th,
+  table#tabelaRegistros td,
+  table#tabelaRegistros tr {
+    display: block;
+    width: 100%;
+  }
+
+  table#tabelaRegistros thead {
+    display: none;
+  }
+
+  table#tabelaRegistros tr {
+    margin-bottom: 15px;
+    background-color: #2e435e;
+    padding: 10px;
+    border-radius: 8px;
+  }
+
+  table#tabelaRegistros td {
+    text-align: left;
+    padding: 10px 12px;
+    position: relative;
+  }
+
+  table#tabelaRegistros td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    color: #aad4ff;
+    display: block;
+    margin-bottom: 4px;
+  }
+}
