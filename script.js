@@ -10,14 +10,18 @@ function carregarTabela() {
 
   registros.forEach((registro, index) => {
     const linha = document.createElement("tr");
+
     linha.innerHTML = `
-      <td>${registro.remessa}</td>
-      <td>${registro.box}</td>
-      <td>${registro.tarefa}</td>
-      <td>${registro.equipe}</td>
-      <td>${registro.obs}</td>
-      <td><button class="remover" onclick="removerRegistro(${index})">Remover</button></td>
+      <td data-label="Remessa">${registro.remessa}</td>
+      <td data-label="Box">${registro.box}</td>
+      <td data-label="Tarefa">${registro.tarefa}</td>
+      <td data-label="Equipe">${registro.equipe}</td>
+      <td data-label="Obs">${registro.obs}</td>
+      <td data-label="Ação">
+        <button class="remover" onclick="removerRegistro(${index})">Remover</button>
+      </td>
     `;
+
     tabela.appendChild(linha);
   });
 }
@@ -49,3 +53,5 @@ document.getElementById("turnoForm").addEventListener("submit", function (event)
 });
 
 window.addEventListener("load", carregarTabela);
+
+
